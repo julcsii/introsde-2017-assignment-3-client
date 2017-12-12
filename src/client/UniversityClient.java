@@ -51,24 +51,31 @@ public class UniversityClient{
 		if (activity.getIdActivity()!=0) {
 			id = String.valueOf(activity.getIdActivity());
 		}
+		String rating = "N/A";
+		if(activity.getRating()!=0) {
+			rating = String.valueOf(activity.getRating())+"/5";
+		}
 		
-		return "\nActivity\n(Id=" + id +", Name=" + activity.getName() + ", \n Description=" + activity.getDescription() + ", \n Place=" + activity.getPlace() + ", \n Type=" + activity.getType() + ", \n startDate=" + activity.getStartdate() + ")";
+		return "\nActivity\n(Id=" + id +", Name=" + activity.getName() + ", \n Description=" + activity.getDescription() + ", \n Place=" + activity.getPlace() + ", \n Type=" + activity.getType() + ", \n startDate=" + activity.getStartdate() + ", \n rating=" + rating + ")";
 	}
 	
 	
 	
 
 	public static void main(String[] args) throws Exception {
+		
 		UniversityService service = new UniversityService();
         University university = service.getUniversityImplPort();
         List<Person> people = university.readPersonList();
+        university.databaseInit();
         
         long personid = people.get(0).getIdPerson();
         long activity_id = people.get(0).getActivityPreferences().get(0).getIdActivity();
-        //TODO: print WSDL URL
-        
         
         //wsimport -keep http://localhost:6902/ws/university?wsdl
+        
+        //Method 0
+        System.out.println("WSDL Documentation available at... "+service.getWSDLDocumentLocation());
 
         //Method 1
         System.out.println("*********Method #1 | readPersonList()*********\n");
@@ -100,8 +107,8 @@ public class UniversityClient{
         a1.setDescription("Cleaning the house");
         a1.setPlace("Trento");
         a1.setType(ActivityType.WORK);
-        a1.setStartdate(DatatypeFactory.newInstance().newXMLGregorianCalendar("2017-12-06"));
-
+        a1.setStartdate("2017-12-06");
+      
 		activities.add(a1);
 		
 		Activity a2 = new Activity();
@@ -110,12 +117,12 @@ public class UniversityClient{
 	    a2.setDescription("Playing football with a team");
 	    a2.setPlace("Milano");
         a2.setType(ActivityType.SPORT);
-        a2.setStartdate(DatatypeFactory.newInstance().newXMLGregorianCalendar("2017-12-06"));		
+        a2.setStartdate("2017-12-06");		
 		activities.add(a2);
         Person p = new Person();
         p.setFirstName("Lilla");
         p.setLastname("Kiss");
-        p.setBirthdate(DatatypeFactory.newInstance().newXMLGregorianCalendar("1997-12-06"));
+        p.setBirthdate("1997-12-06");
         p.getActivityPreferences().add(a1);
         p.getActivityPreferences().add(a2);
       
@@ -177,9 +184,10 @@ public class UniversityClient{
         a3.setDescription("Something new");
         a3.setType(ActivityType.SOCIAL);
         a3.setPlace("Tata");
-        a3.setStartdate(DatatypeFactory.newInstance().newXMLGregorianCalendar("2017-12-09"));
+        a3.setStartdate("2017-12-09");
         System.out.println("activity=" + printActivity(a3)+ "\n");
         Activity newActivity = university.savePersonPreferences(personid, a3);
+        int newActivityId = newActivity.getIdActivity();
         System.out.println("SUCCESS! Activity added to Person(id=" +personid+ ") with activity_id=" + newActivity.getIdActivity());
         
         //Method 10
@@ -188,22 +196,38 @@ public class UniversityClient{
         System.out.println("personid="+personid);
         Activity a4 =  new Activity();
         a4.setName("YAP");
+        a4.setIdActivity(3);
         a4.setDescription("Yet Another Preference");
         a4.setType(ActivityType.WORK);
         a4.setPlace("Balatonfenyves");
-        a4.setStartdate(DatatypeFactory.newInstance().newXMLGregorianCalendar("2017-12-01"));
+        a4.setStartdate("2017-12-01");
         System.out.println("activity=" + printActivity(a4)+ "\n");
         Activity updatedActivity = university.updatePersonPreferences(personid, a4);
         System.out.println(printActivity(updatedActivity));
         
+        //Method 11
+        System.out.println("\n*********Method #11 | evaluatePersonPreferences(Long id, Activity activity, int value) -> Activity*********\n");
+        System.out.println("Rating Person's activity with.. ");
+        System.out.println("personid="+personid);
+        System.out.println("activity=" + printActivity(updatedActivity)+ "\n");
+        Activity updatedActivity2 = university.evaluatePersonPreferences(personid, updatedActivity, 4);
+        System.out.println("The ratings are on a scale of 1 to 5.");
+        System.out.println(printActivity(updatedActivity2));
         
-        /*
-        System.out.println("**********");
-        for (int i=0;i<people.size();i++) {
-        	System.out.println("Person #"+(i+1));
-        	System.out.println(printPerson( university.readPersonList().get(i)));
+        //just to have 2 rated activities...
+        Activity updatedActivity3 = university.evaluatePersonPreferences(personid, activityWithId, 1);
+        
+        //Method 12
+        System.out.println("\n*********Method #12 | getBestPersonPreference(Long id) -> List<Activity>*********\n");
+        System.out.println("Reading Person's best rated activities with...");
+        System.out.println("personid="+personid+"\n");
+        List<Activity> bestActivities = university.getBestPersonPreference(personid);
+        
+        for (int i=0;i<bestActivities.size();i++) {
+        	System.out.println("Activity #"+(i+1));
+        	System.out.println(printActivity(bestActivities.get(i)));
         	System.out.println("");
         }
-        */
+        
     }
 }

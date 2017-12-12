@@ -6,9 +6,7 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
@@ -22,7 +20,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="activityPreferences" type="{http://soap.assignment3.introsde/}activity" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="birthdate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="birthdate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="firstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="idPerson" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="lastname" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -46,8 +44,7 @@ public class Person {
 
     @XmlElement(nillable = true)
     protected List<Activity> activityPreferences;
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar birthdate;
+    protected String birthdate;
     protected String firstName;
     protected long idPerson;
     protected String lastname;
@@ -86,10 +83,10 @@ public class Person {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public XMLGregorianCalendar getBirthdate() {
+    public String getBirthdate() {
         return birthdate;
     }
 
@@ -98,10 +95,10 @@ public class Person {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public void setBirthdate(XMLGregorianCalendar value) {
+    public void setBirthdate(String value) {
         this.birthdate = value;
     }
 

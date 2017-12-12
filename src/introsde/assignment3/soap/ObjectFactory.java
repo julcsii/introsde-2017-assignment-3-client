@@ -26,49 +26,39 @@ public class ObjectFactory {
 
     private final static QName _DeletePerson_QNAME = new QName("http://soap.assignment3.introsde/", "deletePerson");
     private final static QName _CreatePersonResponse_QNAME = new QName("http://soap.assignment3.introsde/", "createPersonResponse");
-    private final static QName _UpdatePersonPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "updatePersonPreferencesResponse");
-    private final static QName _Activity_QNAME = new QName("http://soap.assignment3.introsde/", "activity");
     private final static QName _ReadPersonPreferencesWithIdResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonPreferencesWithIdResponse");
-    private final static QName _ReadPreferences_QNAME = new QName("http://soap.assignment3.introsde/", "readPreferences");
+    private final static QName _DatabaseInitResponse_QNAME = new QName("http://soap.assignment3.introsde/", "databaseInitResponse");
     private final static QName _SavePersonPreferences_QNAME = new QName("http://soap.assignment3.introsde/", "savePersonPreferences");
-    private final static QName _ReadPersonPreferencesWithTypeResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonPreferencesWithTypeResponse");
     private final static QName _CreatePerson_QNAME = new QName("http://soap.assignment3.introsde/", "createPerson");
     private final static QName _ReadPersonPreferencesWithType_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonPreferencesWithType");
+    private final static QName _EvaluatePersonPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "evaluatePersonPreferencesResponse");
     private final static QName _ReadPersonPreferencesWithId_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonPreferencesWithId");
-    private final static QName _ReadPersonListResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonListResponse");
-    private final static QName _ReadPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPreferencesResponse");
     private final static QName _UpdatePersonResponse_QNAME = new QName("http://soap.assignment3.introsde/", "updatePersonResponse");
-    private final static QName _DeletePersonResponse_QNAME = new QName("http://soap.assignment3.introsde/", "deletePersonResponse");
     private final static QName _ReadPersonResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonResponse");
-    private final static QName _ReadPersonList_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonList");
     private final static QName _Person_QNAME = new QName("http://soap.assignment3.introsde/", "person");
     private final static QName _ReadPerson_QNAME = new QName("http://soap.assignment3.introsde/", "readPerson");
-    private final static QName _ActivityType_QNAME = new QName("http://soap.assignment3.introsde/", "activity_type");
     private final static QName _UpdatePersonPreferences_QNAME = new QName("http://soap.assignment3.introsde/", "updatePersonPreferences");
-    private final static QName _SavePersonPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "savePersonPreferencesResponse");
     private final static QName _UpdatePerson_QNAME = new QName("http://soap.assignment3.introsde/", "updatePerson");
+    private final static QName _UpdatePersonPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "updatePersonPreferencesResponse");
+    private final static QName _Activity_QNAME = new QName("http://soap.assignment3.introsde/", "activity");
+    private final static QName _ReadPreferences_QNAME = new QName("http://soap.assignment3.introsde/", "readPreferences");
+    private final static QName _ReadPersonPreferencesWithTypeResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonPreferencesWithTypeResponse");
+    private final static QName _DatabaseInit_QNAME = new QName("http://soap.assignment3.introsde/", "databaseInit");
+    private final static QName _ReadPersonListResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonListResponse");
+    private final static QName _ReadPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "readPreferencesResponse");
+    private final static QName _EvaluatePersonPreferences_QNAME = new QName("http://soap.assignment3.introsde/", "evaluatePersonPreferences");
+    private final static QName _DeletePersonResponse_QNAME = new QName("http://soap.assignment3.introsde/", "deletePersonResponse");
+    private final static QName _GetBestPersonPreference_QNAME = new QName("http://soap.assignment3.introsde/", "getBestPersonPreference");
+    private final static QName _ReadPersonList_QNAME = new QName("http://soap.assignment3.introsde/", "readPersonList");
+    private final static QName _ActivityType_QNAME = new QName("http://soap.assignment3.introsde/", "activity_type");
+    private final static QName _GetBestPersonPreferenceResponse_QNAME = new QName("http://soap.assignment3.introsde/", "getBestPersonPreferenceResponse");
+    private final static QName _SavePersonPreferencesResponse_QNAME = new QName("http://soap.assignment3.introsde/", "savePersonPreferencesResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: introsde.assignment3.soap
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link DeletePerson }
-     * 
-     */
-    public DeletePerson createDeletePerson() {
-        return new DeletePerson();
-    }
-
-    /**
-     * Create an instance of {@link CreatePersonResponse }
-     * 
-     */
-    public CreatePersonResponse createCreatePersonResponse() {
-        return new CreatePersonResponse();
     }
 
     /**
@@ -88,27 +78,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReadPersonPreferencesWithIdResponse }
-     * 
-     */
-    public ReadPersonPreferencesWithIdResponse createReadPersonPreferencesWithIdResponse() {
-        return new ReadPersonPreferencesWithIdResponse();
-    }
-
-    /**
      * Create an instance of {@link ReadPreferences }
      * 
      */
     public ReadPreferences createReadPreferences() {
         return new ReadPreferences();
-    }
-
-    /**
-     * Create an instance of {@link SavePersonPreferences }
-     * 
-     */
-    public SavePersonPreferences createSavePersonPreferences() {
-        return new SavePersonPreferences();
     }
 
     /**
@@ -120,27 +94,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreatePerson }
+     * Create an instance of {@link DatabaseInit }
      * 
      */
-    public CreatePerson createCreatePerson() {
-        return new CreatePerson();
-    }
-
-    /**
-     * Create an instance of {@link ReadPersonPreferencesWithType }
-     * 
-     */
-    public ReadPersonPreferencesWithType createReadPersonPreferencesWithType() {
-        return new ReadPersonPreferencesWithType();
-    }
-
-    /**
-     * Create an instance of {@link ReadPersonPreferencesWithId }
-     * 
-     */
-    public ReadPersonPreferencesWithId createReadPersonPreferencesWithId() {
-        return new ReadPersonPreferencesWithId();
+    public DatabaseInit createDatabaseInit() {
+        return new DatabaseInit();
     }
 
     /**
@@ -160,11 +118,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UpdatePersonResponse }
+     * Create an instance of {@link EvaluatePersonPreferences }
      * 
      */
-    public UpdatePersonResponse createUpdatePersonResponse() {
-        return new UpdatePersonResponse();
+    public EvaluatePersonPreferences createEvaluatePersonPreferences() {
+        return new EvaluatePersonPreferences();
     }
 
     /**
@@ -176,11 +134,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReadPersonResponse }
+     * Create an instance of {@link GetBestPersonPreference }
      * 
      */
-    public ReadPersonResponse createReadPersonResponse() {
-        return new ReadPersonResponse();
+    public GetBestPersonPreference createGetBestPersonPreference() {
+        return new GetBestPersonPreference();
     }
 
     /**
@@ -189,6 +147,110 @@ public class ObjectFactory {
      */
     public ReadPersonList createReadPersonList() {
         return new ReadPersonList();
+    }
+
+    /**
+     * Create an instance of {@link GetBestPersonPreferenceResponse }
+     * 
+     */
+    public GetBestPersonPreferenceResponse createGetBestPersonPreferenceResponse() {
+        return new GetBestPersonPreferenceResponse();
+    }
+
+    /**
+     * Create an instance of {@link SavePersonPreferencesResponse }
+     * 
+     */
+    public SavePersonPreferencesResponse createSavePersonPreferencesResponse() {
+        return new SavePersonPreferencesResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeletePerson }
+     * 
+     */
+    public DeletePerson createDeletePerson() {
+        return new DeletePerson();
+    }
+
+    /**
+     * Create an instance of {@link CreatePersonResponse }
+     * 
+     */
+    public CreatePersonResponse createCreatePersonResponse() {
+        return new CreatePersonResponse();
+    }
+
+    /**
+     * Create an instance of {@link ReadPersonPreferencesWithIdResponse }
+     * 
+     */
+    public ReadPersonPreferencesWithIdResponse createReadPersonPreferencesWithIdResponse() {
+        return new ReadPersonPreferencesWithIdResponse();
+    }
+
+    /**
+     * Create an instance of {@link DatabaseInitResponse }
+     * 
+     */
+    public DatabaseInitResponse createDatabaseInitResponse() {
+        return new DatabaseInitResponse();
+    }
+
+    /**
+     * Create an instance of {@link SavePersonPreferences }
+     * 
+     */
+    public SavePersonPreferences createSavePersonPreferences() {
+        return new SavePersonPreferences();
+    }
+
+    /**
+     * Create an instance of {@link CreatePerson }
+     * 
+     */
+    public CreatePerson createCreatePerson() {
+        return new CreatePerson();
+    }
+
+    /**
+     * Create an instance of {@link ReadPersonPreferencesWithType }
+     * 
+     */
+    public ReadPersonPreferencesWithType createReadPersonPreferencesWithType() {
+        return new ReadPersonPreferencesWithType();
+    }
+
+    /**
+     * Create an instance of {@link EvaluatePersonPreferencesResponse }
+     * 
+     */
+    public EvaluatePersonPreferencesResponse createEvaluatePersonPreferencesResponse() {
+        return new EvaluatePersonPreferencesResponse();
+    }
+
+    /**
+     * Create an instance of {@link ReadPersonPreferencesWithId }
+     * 
+     */
+    public ReadPersonPreferencesWithId createReadPersonPreferencesWithId() {
+        return new ReadPersonPreferencesWithId();
+    }
+
+    /**
+     * Create an instance of {@link UpdatePersonResponse }
+     * 
+     */
+    public UpdatePersonResponse createUpdatePersonResponse() {
+        return new UpdatePersonResponse();
+    }
+
+    /**
+     * Create an instance of {@link ReadPersonResponse }
+     * 
+     */
+    public ReadPersonResponse createReadPersonResponse() {
+        return new ReadPersonResponse();
     }
 
     /**
@@ -213,14 +275,6 @@ public class ObjectFactory {
      */
     public UpdatePersonPreferences createUpdatePersonPreferences() {
         return new UpdatePersonPreferences();
-    }
-
-    /**
-     * Create an instance of {@link SavePersonPreferencesResponse }
-     * 
-     */
-    public SavePersonPreferencesResponse createSavePersonPreferencesResponse() {
-        return new SavePersonPreferencesResponse();
     }
 
     /**
@@ -250,24 +304,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonPreferencesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "updatePersonPreferencesResponse")
-    public JAXBElement<UpdatePersonPreferencesResponse> createUpdatePersonPreferencesResponse(UpdatePersonPreferencesResponse value) {
-        return new JAXBElement<UpdatePersonPreferencesResponse>(_UpdatePersonPreferencesResponse_QNAME, UpdatePersonPreferencesResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Activity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "activity")
-    public JAXBElement<Activity> createActivity(Activity value) {
-        return new JAXBElement<Activity>(_Activity_QNAME, Activity.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonPreferencesWithIdResponse }{@code >}}
      * 
      */
@@ -277,12 +313,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPreferences }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link DatabaseInitResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPreferences")
-    public JAXBElement<ReadPreferences> createReadPreferences(ReadPreferences value) {
-        return new JAXBElement<ReadPreferences>(_ReadPreferences_QNAME, ReadPreferences.class, null, value);
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "databaseInitResponse")
+    public JAXBElement<DatabaseInitResponse> createDatabaseInitResponse(DatabaseInitResponse value) {
+        return new JAXBElement<DatabaseInitResponse>(_DatabaseInitResponse_QNAME, DatabaseInitResponse.class, null, value);
     }
 
     /**
@@ -292,15 +328,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "savePersonPreferences")
     public JAXBElement<SavePersonPreferences> createSavePersonPreferences(SavePersonPreferences value) {
         return new JAXBElement<SavePersonPreferences>(_SavePersonPreferences_QNAME, SavePersonPreferences.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonPreferencesWithTypeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonPreferencesWithTypeResponse")
-    public JAXBElement<ReadPersonPreferencesWithTypeResponse> createReadPersonPreferencesWithTypeResponse(ReadPersonPreferencesWithTypeResponse value) {
-        return new JAXBElement<ReadPersonPreferencesWithTypeResponse>(_ReadPersonPreferencesWithTypeResponse_QNAME, ReadPersonPreferencesWithTypeResponse.class, null, value);
     }
 
     /**
@@ -322,30 +349,21 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EvaluatePersonPreferencesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "evaluatePersonPreferencesResponse")
+    public JAXBElement<EvaluatePersonPreferencesResponse> createEvaluatePersonPreferencesResponse(EvaluatePersonPreferencesResponse value) {
+        return new JAXBElement<EvaluatePersonPreferencesResponse>(_EvaluatePersonPreferencesResponse_QNAME, EvaluatePersonPreferencesResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonPreferencesWithId }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonPreferencesWithId")
     public JAXBElement<ReadPersonPreferencesWithId> createReadPersonPreferencesWithId(ReadPersonPreferencesWithId value) {
         return new JAXBElement<ReadPersonPreferencesWithId>(_ReadPersonPreferencesWithId_QNAME, ReadPersonPreferencesWithId.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonListResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonListResponse")
-    public JAXBElement<ReadPersonListResponse> createReadPersonListResponse(ReadPersonListResponse value) {
-        return new JAXBElement<ReadPersonListResponse>(_ReadPersonListResponse_QNAME, ReadPersonListResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPreferencesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPreferencesResponse")
-    public JAXBElement<ReadPreferencesResponse> createReadPreferencesResponse(ReadPreferencesResponse value) {
-        return new JAXBElement<ReadPreferencesResponse>(_ReadPreferencesResponse_QNAME, ReadPreferencesResponse.class, null, value);
     }
 
     /**
@@ -358,30 +376,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePersonResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "deletePersonResponse")
-    public JAXBElement<DeletePersonResponse> createDeletePersonResponse(DeletePersonResponse value) {
-        return new JAXBElement<DeletePersonResponse>(_DeletePersonResponse_QNAME, DeletePersonResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonResponse")
     public JAXBElement<ReadPersonResponse> createReadPersonResponse(ReadPersonResponse value) {
         return new JAXBElement<ReadPersonResponse>(_ReadPersonResponse_QNAME, ReadPersonResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonList }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonList")
-    public JAXBElement<ReadPersonList> createReadPersonList(ReadPersonList value) {
-        return new JAXBElement<ReadPersonList>(_ReadPersonList_QNAME, ReadPersonList.class, null, value);
     }
 
     /**
@@ -403,15 +403,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ActivityType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "activity_type")
-    public JAXBElement<ActivityType> createActivityType(ActivityType value) {
-        return new JAXBElement<ActivityType>(_ActivityType_QNAME, ActivityType.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonPreferences }{@code >}}
      * 
      */
@@ -421,21 +412,138 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonPreferencesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "savePersonPreferencesResponse")
-    public JAXBElement<SavePersonPreferencesResponse> createSavePersonPreferencesResponse(SavePersonPreferencesResponse value) {
-        return new JAXBElement<SavePersonPreferencesResponse>(_SavePersonPreferencesResponse_QNAME, SavePersonPreferencesResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePerson }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "updatePerson")
     public JAXBElement<UpdatePerson> createUpdatePerson(UpdatePerson value) {
         return new JAXBElement<UpdatePerson>(_UpdatePerson_QNAME, UpdatePerson.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonPreferencesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "updatePersonPreferencesResponse")
+    public JAXBElement<UpdatePersonPreferencesResponse> createUpdatePersonPreferencesResponse(UpdatePersonPreferencesResponse value) {
+        return new JAXBElement<UpdatePersonPreferencesResponse>(_UpdatePersonPreferencesResponse_QNAME, UpdatePersonPreferencesResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Activity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "activity")
+    public JAXBElement<Activity> createActivity(Activity value) {
+        return new JAXBElement<Activity>(_Activity_QNAME, Activity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPreferences }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPreferences")
+    public JAXBElement<ReadPreferences> createReadPreferences(ReadPreferences value) {
+        return new JAXBElement<ReadPreferences>(_ReadPreferences_QNAME, ReadPreferences.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonPreferencesWithTypeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonPreferencesWithTypeResponse")
+    public JAXBElement<ReadPersonPreferencesWithTypeResponse> createReadPersonPreferencesWithTypeResponse(ReadPersonPreferencesWithTypeResponse value) {
+        return new JAXBElement<ReadPersonPreferencesWithTypeResponse>(_ReadPersonPreferencesWithTypeResponse_QNAME, ReadPersonPreferencesWithTypeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DatabaseInit }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "databaseInit")
+    public JAXBElement<DatabaseInit> createDatabaseInit(DatabaseInit value) {
+        return new JAXBElement<DatabaseInit>(_DatabaseInit_QNAME, DatabaseInit.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonListResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonListResponse")
+    public JAXBElement<ReadPersonListResponse> createReadPersonListResponse(ReadPersonListResponse value) {
+        return new JAXBElement<ReadPersonListResponse>(_ReadPersonListResponse_QNAME, ReadPersonListResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPreferencesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPreferencesResponse")
+    public JAXBElement<ReadPreferencesResponse> createReadPreferencesResponse(ReadPreferencesResponse value) {
+        return new JAXBElement<ReadPreferencesResponse>(_ReadPreferencesResponse_QNAME, ReadPreferencesResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EvaluatePersonPreferences }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "evaluatePersonPreferences")
+    public JAXBElement<EvaluatePersonPreferences> createEvaluatePersonPreferences(EvaluatePersonPreferences value) {
+        return new JAXBElement<EvaluatePersonPreferences>(_EvaluatePersonPreferences_QNAME, EvaluatePersonPreferences.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePersonResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "deletePersonResponse")
+    public JAXBElement<DeletePersonResponse> createDeletePersonResponse(DeletePersonResponse value) {
+        return new JAXBElement<DeletePersonResponse>(_DeletePersonResponse_QNAME, DeletePersonResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetBestPersonPreference }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "getBestPersonPreference")
+    public JAXBElement<GetBestPersonPreference> createGetBestPersonPreference(GetBestPersonPreference value) {
+        return new JAXBElement<GetBestPersonPreference>(_GetBestPersonPreference_QNAME, GetBestPersonPreference.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonList }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "readPersonList")
+    public JAXBElement<ReadPersonList> createReadPersonList(ReadPersonList value) {
+        return new JAXBElement<ReadPersonList>(_ReadPersonList_QNAME, ReadPersonList.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ActivityType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "activity_type")
+    public JAXBElement<ActivityType> createActivityType(ActivityType value) {
+        return new JAXBElement<ActivityType>(_ActivityType_QNAME, ActivityType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetBestPersonPreferenceResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "getBestPersonPreferenceResponse")
+    public JAXBElement<GetBestPersonPreferenceResponse> createGetBestPersonPreferenceResponse(GetBestPersonPreferenceResponse value) {
+        return new JAXBElement<GetBestPersonPreferenceResponse>(_GetBestPersonPreferenceResponse_QNAME, GetBestPersonPreferenceResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonPreferencesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.assignment3.introsde/", name = "savePersonPreferencesResponse")
+    public JAXBElement<SavePersonPreferencesResponse> createSavePersonPreferencesResponse(SavePersonPreferencesResponse value) {
+        return new JAXBElement<SavePersonPreferencesResponse>(_SavePersonPreferencesResponse_QNAME, SavePersonPreferencesResponse.class, null, value);
     }
 
 }

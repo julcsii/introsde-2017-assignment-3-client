@@ -181,4 +181,49 @@ public interface University {
         @WebParam(name = "arg1", targetNamespace = "")
         Activity arg1);
 
+    /**
+     * 
+     */
+    @WebMethod
+    @RequestWrapper(localName = "databaseInit", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.DatabaseInit")
+    @ResponseWrapper(localName = "databaseInitResponse", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.DatabaseInitResponse")
+    @Action(input = "http://soap.assignment3.introsde/University/databaseInitRequest", output = "http://soap.assignment3.introsde/University/databaseInitResponse")
+    public void databaseInit();
+
+    /**
+     * 
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns introsde.assignment3.soap.Activity
+     */
+    @WebMethod
+    @WebResult(name = "evaluatedActivity", targetNamespace = "")
+    @RequestWrapper(localName = "evaluatePersonPreferences", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.EvaluatePersonPreferences")
+    @ResponseWrapper(localName = "evaluatePersonPreferencesResponse", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.EvaluatePersonPreferencesResponse")
+    @Action(input = "http://soap.assignment3.introsde/University/evaluatePersonPreferencesRequest", output = "http://soap.assignment3.introsde/University/evaluatePersonPreferencesResponse")
+    public Activity evaluatePersonPreferences(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Long arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        Activity arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        int arg2);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns java.util.List<introsde.assignment3.soap.Activity>
+     */
+    @WebMethod
+    @WebResult(name = "bestPreference", targetNamespace = "")
+    @RequestWrapper(localName = "getBestPersonPreference", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.GetBestPersonPreference")
+    @ResponseWrapper(localName = "getBestPersonPreferenceResponse", targetNamespace = "http://soap.assignment3.introsde/", className = "introsde.assignment3.soap.GetBestPersonPreferenceResponse")
+    @Action(input = "http://soap.assignment3.introsde/University/getBestPersonPreferenceRequest", output = "http://soap.assignment3.introsde/University/getBestPersonPreferenceResponse")
+    public List<Activity> getBestPersonPreference(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Long arg0);
+
 }
