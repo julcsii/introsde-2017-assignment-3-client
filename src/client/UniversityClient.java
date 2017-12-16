@@ -1,15 +1,13 @@
 package client;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.XMLGregorianCalendar;
-import javax.xml.ws.Holder;
-
-import introsde.assignment3.soap.*;
+import introsde.assignment3.soap.Activity;
+import introsde.assignment3.soap.ActivityType;
+import introsde.assignment3.soap.Person;
+import introsde.assignment3.soap.University;
+import introsde.assignment3.soap.UniversityService;
 
 public class UniversityClient{
 	
@@ -66,8 +64,9 @@ public class UniversityClient{
 		
 		UniversityService service = new UniversityService();
         University university = service.getUniversityImplPort();
-        List<Person> people = university.readPersonList();
         university.databaseInit();
+        List<Person> people = university.readPersonList();
+       
         
         long personid = people.get(0).getIdPerson();
         long activity_id = people.get(0).getActivityPreferences().get(0).getIdActivity();

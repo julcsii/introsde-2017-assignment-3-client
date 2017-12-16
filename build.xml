@@ -105,8 +105,8 @@
 		</copy>
 	</target>
 	<target name="execute.evaluation" depends="compile">
-		<echo message="Executing SOAP clienta and saving response to client-server.log" />
-		<record name="client-server.log" emacsmode="true"	action="start"/>
+		<echo message="Executing SOAP client and saving response to soap-client.log" />
+		<record name="soap-client.log" emacsmode="true"	action="start"/>
 		<java classname="client.UniversityClient" classpath="${build.dir}">
 			<classpath>
 				<fileset dir="${lib.dir}">
@@ -115,6 +115,6 @@
 				</fileset>
 			</classpath>
 		</java>
-		<record name="client-server.log" action="stop"/>
+		<record name="soap-client.log" action="stop"/>
 	</target>
 </project>
