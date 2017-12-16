@@ -74,10 +74,11 @@ public class UniversityClient{
         //wsimport -keep http://localhost:6902/ws/university?wsdl
         
         //Method 0
+        System.out.println("*********Method #0 | URL of wsdl documentation*********");
         System.out.println("WSDL Documentation available at... "+service.getWSDLDocumentLocation());
 
         //Method 1
-        System.out.println("*********Method #1 | readPersonList()*********\n");
+        System.out.println("\n********Method #1 | readPersonList()*********\n");
         System.out.println("Reading all people...\n");
         for (int i=0;i<people.size();i++) {
         	System.out.println("Person #"+(i+1));

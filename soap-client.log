@@ -1,5 +1,7 @@
+*********Method #0 | URL of wsdl documentation*********
 WSDL Documentation available at... https://sde-assignment-3.herokuapp.com/ws/university?wsdl
-*********Method #1 | readPersonList()*********
+
+********Method #1 | readPersonList()*********
 
 Reading all people...
 
@@ -35,6 +37,27 @@ Activity
  rating=N/A),
 Activity
 (Id=57, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=76, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=95, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=114, Name=Random, 
  Description=Something new, 
  Place=Tata, 
  Type=SOCIAL, 
@@ -364,6 +387,261 @@ Activity
  startDate=2015-02-14, 
  rating=N/A)}]
 
+Person #21
+Person [Id=77, Firstname=Julia, Lastname=Hermann, Birthdate=1993-05-04,{
+Activity
+(Id=78, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A),
+Activity
+(Id=79, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)}]
+
+Person #22
+Person [Id=80, Firstname=Daniella, Lastname=Kanyicska, Birthdate=1993-02-10,{
+Activity
+(Id=81, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A),
+Activity
+(Id=82, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)}]
+
+Person #23
+Person [Id=83, Firstname=Zsofia, Lastname=Lele, Birthdate=1992-09-10,{
+Activity
+(Id=84, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A),
+Activity
+(Id=85, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)}]
+
+Person #24
+Person [Id=86, Firstname=Kata, Lastname=Hermann, Birthdate=1999-07-18,{
+Activity
+(Id=87, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A),
+Activity
+(Id=88, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)}]
+
+Person #25
+Person [Id=89, Firstname=Mate, Lastname=Mirko, Birthdate=1991-03-21,{
+Activity
+(Id=90, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A),
+Activity
+(Id=91, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)}]
+
+Person #26
+Person [Id=96, Firstname=Julia, Lastname=Hermann, Birthdate=1993-05-04,{
+Activity
+(Id=97, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A),
+Activity
+(Id=98, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)}]
+
+Person #27
+Person [Id=99, Firstname=Daniella, Lastname=Kanyicska, Birthdate=1993-02-10,{
+Activity
+(Id=100, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A),
+Activity
+(Id=101, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)}]
+
+Person #28
+Person [Id=102, Firstname=Zsofia, Lastname=Lele, Birthdate=1992-09-10,{
+Activity
+(Id=103, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A),
+Activity
+(Id=104, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)}]
+
+Person #29
+Person [Id=105, Firstname=Kata, Lastname=Hermann, Birthdate=1999-07-18,{
+Activity
+(Id=106, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A),
+Activity
+(Id=107, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)}]
+
+Person #30
+Person [Id=108, Firstname=Mate, Lastname=Mirko, Birthdate=1991-03-21,{
+Activity
+(Id=109, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A),
+Activity
+(Id=110, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)}]
+
+Person #31
+Person [Id=115, Firstname=Julia, Lastname=Hermann, Birthdate=1993-05-04,{
+Activity
+(Id=116, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A),
+Activity
+(Id=117, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)}]
+
+Person #32
+Person [Id=118, Firstname=Daniella, Lastname=Kanyicska, Birthdate=1993-02-10,{
+Activity
+(Id=119, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A),
+Activity
+(Id=120, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)}]
+
+Person #33
+Person [Id=121, Firstname=Zsofia, Lastname=Lele, Birthdate=1992-09-10,{
+Activity
+(Id=122, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A),
+Activity
+(Id=123, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)}]
+
+Person #34
+Person [Id=124, Firstname=Kata, Lastname=Hermann, Birthdate=1999-07-18,{
+Activity
+(Id=125, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A),
+Activity
+(Id=126, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)}]
+
+Person #35
+Person [Id=127, Firstname=Mate, Lastname=Mirko, Birthdate=1991-03-21,{
+Activity
+(Id=128, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A),
+Activity
+(Id=129, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)}]
+
 
 *********Method #2 | readPerson(long personid)*********
 Reading Person with... 
@@ -400,6 +678,27 @@ Activity
  rating=N/A),
 Activity
 (Id=57, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=76, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=95, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=114, Name=Random, 
  Description=Something new, 
  Place=Tata, 
  Type=SOCIAL, 
@@ -443,6 +742,27 @@ Activity
  Place=Tata, 
  Type=SOCIAL, 
  startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=76, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=95, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A),
+Activity
+(Id=114, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
  rating=N/A)}]
 
 Person with id=1 has been updated.
@@ -465,13 +785,13 @@ Activity
  startDate=2017-12-06, 
  rating=N/A)}]
 
-SUCCESS!Person with id=73 has been created.
+SUCCESS!Person with id=130 has been created.
 
 *********Method #5 | deletePerson(Long id)*********
 Deleting Person with... 
-id=73
+id=130
 
-SUCCESS!Person with id=73 has been deleted.
+SUCCESS!Person with id=130 has been deleted.
 
 *********Method #6 | readPersonPreferences(long personid, String activityType)*********
 
@@ -923,6 +1243,336 @@ Activity
  startDate=2015-02-14, 
  rating=N/A)
 
+Activity #44
+
+Activity
+(Id=76, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A)
+
+Activity #45
+
+Activity
+(Id=78, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A)
+
+Activity #46
+
+Activity
+(Id=79, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)
+
+Activity #47
+
+Activity
+(Id=82, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)
+
+Activity #48
+
+Activity
+(Id=81, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A)
+
+Activity #49
+
+Activity
+(Id=84, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A)
+
+Activity #50
+
+Activity
+(Id=85, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)
+
+Activity #51
+
+Activity
+(Id=87, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A)
+
+Activity #52
+
+Activity
+(Id=88, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)
+
+Activity #53
+
+Activity
+(Id=91, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)
+
+Activity #54
+
+Activity
+(Id=90, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A)
+
+Activity #55
+
+Activity
+(Id=95, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A)
+
+Activity #56
+
+Activity
+(Id=97, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A)
+
+Activity #57
+
+Activity
+(Id=98, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)
+
+Activity #58
+
+Activity
+(Id=100, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A)
+
+Activity #59
+
+Activity
+(Id=101, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)
+
+Activity #60
+
+Activity
+(Id=103, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A)
+
+Activity #61
+
+Activity
+(Id=104, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)
+
+Activity #62
+
+Activity
+(Id=107, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)
+
+Activity #63
+
+Activity
+(Id=106, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A)
+
+Activity #64
+
+Activity
+(Id=109, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A)
+
+Activity #65
+
+Activity
+(Id=110, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)
+
+Activity #66
+
+Activity
+(Id=114, Name=Random, 
+ Description=Something new, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2017-12-09, 
+ rating=N/A)
+
+Activity #67
+
+Activity
+(Id=116, Name=Running, 
+ Description=Running on the track, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2000-12-11, 
+ rating=N/A)
+
+Activity #68
+
+Activity
+(Id=117, Name=Cooking, 
+ Description=Japanese cooking class, 
+ Place=Rovereto, 
+ Type=SOCIAL, 
+ startDate=2007-12-21, 
+ rating=N/A)
+
+Activity #69
+
+Activity
+(Id=119, Name=Museum, 
+ Description=Attending history museum, 
+ Place=Budpest, 
+ Type=CULTURE, 
+ startDate=2017-12-11, 
+ rating=N/A)
+
+Activity #70
+
+Activity
+(Id=120, Name=Summer school, 
+ Description=EIT Digital summer school on Big Data, 
+ Place=Stockholm, 
+ Type=ACADEMIC, 
+ startDate=2016-05-04, 
+ rating=N/A)
+
+Activity #71
+
+Activity
+(Id=122, Name=Treasure Hunt, 
+ Description=Fun outdoors pub crawl with colleauges, 
+ Place=Budapest, 
+ Type=WORK, 
+ startDate=2003-07-18, 
+ rating=N/A)
+
+Activity #72
+
+Activity
+(Id=123, Name=Dog Wlaking, 
+ Description=Walking with the family dog, 
+ Place=Tata, 
+ Type=SOCIAL, 
+ startDate=2006-01-01, 
+ rating=N/A)
+
+Activity #73
+
+Activity
+(Id=126, Name=Exam, 
+ Description=Proving results of studying in a semester, 
+ Place=Budapest, 
+ Type=ACADEMIC, 
+ startDate=2016-03-18, 
+ rating=N/A)
+
+Activity #74
+
+Activity
+(Id=125, Name=Shopping, 
+ Description=Going to shopping centre, 
+ Place=Vienna, 
+ Type=SOCIAL, 
+ startDate=2014-09-11, 
+ rating=N/A)
+
+Activity #75
+
+Activity
+(Id=128, Name=Yoga, 
+ Description=Relaxing and streching, 
+ Place=Budapest, 
+ Type=SPORT, 
+ startDate=2008-06-13, 
+ rating=N/A)
+
+Activity #76
+
+Activity
+(Id=129, Name=Hiking, 
+ Description=Going up to mountain peaks, 
+ Place=Trento, 
+ Type=SPORT, 
+ startDate=2015-02-14, 
+ rating=N/A)
+
 
 *********Method #8 | readPersonPreferencesWithId(long personid, long activity_id)*********
 
@@ -952,7 +1602,7 @@ Activity
  startDate=2017-12-09, 
  rating=N/A)
 
-SUCCESS! Activity added to Person(id=1) with activity_id=76
+SUCCESS! Activity added to Person(id=1) with activity_id=133
 
 *********Method #10 | updatePersonPreferences(long personid, Activity activity)*********
 
